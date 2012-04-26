@@ -1,0 +1,98 @@
+/*****************************/
+/*	        COMMON           */
+/*****************************/
+
+body{font:13px Arial, Helvetica, sans-serif; color:#333333; background-color:#f3f5f4;padding-top: 140px; }
+.span760{ width: 760px; }
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+img{border:none;}
+
+/*****************************/
+/*	        LAYOUT           */
+/*****************************/
+#head-wrapper {background:url(../assets/img/bg_header.jpg) top left repeat-x; height:114px;}
+#header {height:114px;}
+
+/*****************************/
+/*	        HEADER           */
+/*****************************/
+#logo {float:left; margin:15px 38px 0 0;}
+	#logo a {background:url(../assets/img/logo.jpg) top left no-repeat; width:141px; height:29px; text-indent:-99999px; display:block}
+.navbar-fixed-top .nav {float:left; padding-top:27px;  height:24px }
+	.navbar-fixed-top .nav > li > a {text-decoration:none; font-size:12px; background:url(../assets/img/menu-bg.jpg) top left no-repeat; display:block; width:150px; height:35px; line-height:35px; text-align:center; color:#bfa09f; padding: 0;
+line-height: auto;}
+		.nav li.active a {background-position:top right}
+		.navbar-fixed-top ul.nav li > a span {display:inline-block; padding-left:25px}
+		.navbar-fixed-top ul.nav > li#basket span {background:url(../assets/img/icon-basket.jpg) left center no-repeat}
+		.navbar-fixed-top ul.nav > li#favourites span {background:url(../assets/img/icon_fav.jpg) left center no-repeat}
+		.navbar-fixed-top ul.nav > li#explore span {background:url(../assets/img/icon-explore.jpg) left center no-repeat}
+.pull-right{ text-align: center; padding-right: 25px;}
+.auth-menu{margin-top: 5px;}
+/*SIDER */
+.sidebar-nav .nav.nav-list {padding-left:0;}
+.sidebar-nav a { font-size: 14px; color: #7F8080;}
+.sidebar-nav li.nav-header {font-size: 15px; font-weight: bold;}
+
+.submenu {clear:both; overflow:hidden; padding-top:22px; color:#c6acaa}
+	.submenu a.noti {float:left; background:url(../assets/img/notification.jpg) top left no-repeat; height:26px; font:normal 13px/26px Arial, Helvetica, sans-serif; color:#c6acaa; }
+		.submenu a.noti strong {display:inline-block; margin-right:6px; width:26px; height:26px; text-align:center}
+.search {margin-bottom:25px;}
+.search input[type="text"]{border:#989898 1px solid; width:132px; text-indent:10px; color:#babab9; height:25px; background-color:#eaecec}
+
+.creat-tag {text-align:right;}
+.creat-tag a {color:#7f8080; text-decoration:underline}
+
+.recipe-item {
+  float:left; width:180px; border:#bebab9 1px solid; margin:0 11px 11px 0; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; padding-top:12px; background-color:#fff; -webkit-box-shadow: 0px 1px 0px #dad8d8; -moz-box-shadow: 0px 1px 0px #dad8d8; box-shadow: 0px 1px 0px #dad8d8;
+}
+.recipe-item .img-name {text-align:center;}
+.recipe-item .img-name img {width: 155px; max-height: 170px;}
+.recipe-item .img-name p {text-align:left; padding:10px; font-size:11px}
+.recipe-item .source {background-color:#f3f2f2; padding: 10px 0px 0px 3px;}
+.recipe-item .source div {display: inline-block;}
+.recipe-item .source div.clogo {padding-bottom: 5px;}
+.recipe-item .source div.clogo img {float: left; width: 94px; height: 22px;}
+.recipe-item .source .btn-group button{font-size: 10px;}
+.recipe-item .source .btn-group li a{font-size: 10px;}
+.btn.dropdown-toggle{ height: 28px; }
+.dropdown-toggle .caret {margin-top: 3px;}
+/* Facebook button - temporary css */
+.fb_button .fb_button_text, .fb_button_rtl .fb_button_text {
+    background: url("https://s-static.ak.fbcdn.net/rsrc.php/v1/yL/r/FGFbc80dUKj.png") repeat scroll 0 0 #5F78AB;
+    border-bottom: 1px solid #1A356E;
+    border-top: 1px solid #879AC0;
+    color: #FFFFFF;
+    display: block;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-weight: bold;
+    margin: 1px 1px 0 21px;
+    padding: 2px 6px 3px;
+    text-shadow: none;
+}
+a.fb_button, a.fb_button_rtl, .fb_button, .fb_button_rtl {
+    text-decoration: none;
+}
+.fb_button_medium, .fb_button_medium_rtl {
+    background-position: left -188px !important;
+    font-size: 11px;
+    line-height: 14px;
+}
+.fb_button_medium, .fb_button_medium_rtl {
+    font-size: 11px;
+    line-height: 14px;
+}
+a.fb_button, a.fb_button_rtl, .fb_button, .fb_button_rtl {
+    text-decoration: none;
+}
+.fb_button, .fb_button_rtl {
+    background: url("https://s-static.ak.fbcdn.net/rsrc.php/v1/yL/r/FGFbc80dUKj.png") no-repeat scroll 0 0 #29447E;
+    cursor: pointer;
+    display: inline-block;
+    outline: medium none;
+    padding: 0 0 0 1px;
+    text-decoration: none;
+}
+

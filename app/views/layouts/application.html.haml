@@ -14,36 +14,11 @@
     %link(href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72")
     %link(href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114")
 
-  %body{:style => 'padding-top: 0'}
-    .container
-      = render :partial => 'layouts/topbar'
-      - if flash.any?
-        - flash.each do |name, msg|
-          .alert{:class =>  "alert-#{name == :notice ? 'success' : 'error'}"}
-            %a.close{ :'data-dismiss' => "alert"}×
-            = msg
-
-      .content
-        .row
-          .span12{:style => "width: 100%;"}
-            = yield
-          &nbsp;
-      %footer
-        .navbar.navbar
-          .container
-            %hr
-            %ul.nav
-              %li
-                %a{:href => root_url} &copy; 2012 Catalyst
-              %li
-                = link_to "About Us", 'javascript:;', :class => 'comming-soon'
-              %li
-                = link_to "Terms", 'javascript:;', :class => 'comming-soon'
-
-    /
-      Javascripts
-      \==================================================
-    / Placed at the end of the document so the pages load faster
-    = javascript_include_tag "application"
-
-
+  %body
+    #head-wrapper.navbar.navbar-fixed-top.header
+      = render partial: 'layouts/topbar'
+    .container-fluid
+      .row-fluid
+        = render partial: 'layouts/sidebar'
+      .span10
+        = yield
