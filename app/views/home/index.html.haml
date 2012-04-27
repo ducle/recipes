@@ -1,0 +1,15 @@
+#recipes
+  - @foods.each do |item|
+    .recipe-item
+      .img-name
+        = link_to image_tag(item.image.url), '#'
+        %p= item.description
+      .source
+        .clogo= image_tag(item.site_source.url)
+        .btn-group
+          %button.btn Action
+          <button class="btn dropdown-toggle" data-toggle="dropdown"><span class= 'caret'></span></button>
+          %ul.dropdown-menu
+            %li= link_to 'Add to basket', '#'
+            %li= link_to'Remove from favourites'
+= javascript_include_tag 'application'

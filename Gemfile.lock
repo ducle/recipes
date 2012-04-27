@@ -48,6 +48,7 @@ GEM
     activesupport (3.2.1)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.2.7)
     ansi (1.4.2)
     archive-tar-minitar (0.5.2)
     arel (3.0.2)
@@ -68,6 +69,10 @@ GEM
     eventmachine (0.12.10)
     execjs (1.3.0)
       multi_json (~> 1.0)
+    faraday (0.7.6)
+      addressable (~> 2.2)
+      multipart-post (~> 1.1)
+      rack (~> 1.1)
     haml (3.1.4)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -75,7 +80,9 @@ GEM
       haml (~> 3.0)
       railties (~> 3.0)
     has_scope (0.5.1)
+    hashie (1.2.0)
     hike (1.2.1)
+    httpauth (0.1)
     i18n (0.6.0)
     inherited_resources (1.3.1)
       has_scope (~> 0.5.0)
@@ -99,7 +106,20 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.3.2)
+    multipart-post (1.1.5)
     mysql2 (0.3.11)
+    oauth2 (0.6.1)
+      faraday (~> 0.7)
+      httpauth (~> 0.1)
+      multi_json (~> 1.3)
+    omniauth (1.1.0)
+      hashie (~> 1.2)
+      rack
+    omniauth-facebook (1.2.0)
+      omniauth-oauth2 (~> 1.0.0)
+    omniauth-oauth2 (1.0.1)
+      oauth2 (~> 0.6.0)
+      omniauth (~> 1.0)
     orm_adapter (0.0.7)
     paperclip (2.7.0)
       activerecord (>= 2.3.0)
@@ -190,6 +210,7 @@ DEPENDENCIES
   inherited_resources
   jquery-rails
   mysql2
+  omniauth-facebook
   paperclip (~> 2.7)
   rails (= 3.2.1)
   rails3-jquery-autocomplete

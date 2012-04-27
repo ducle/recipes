@@ -19,6 +19,7 @@
       = render partial: 'layouts/topbar'
     .container-fluid
       .row-fluid
-        = render partial: 'layouts/sidebar'
-      .span10
-        = yield
+        .span2{style: 'min-width: 120px;'}
+          = render partial: 'layouts/sidebar'
+        .span10
+          = yield

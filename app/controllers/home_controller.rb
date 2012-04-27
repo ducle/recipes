@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @food = Food.all
+    @foods = Food.all
   end
 
 end

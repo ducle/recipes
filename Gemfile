@@ -6,6 +6,7 @@ gem 'haml-rails'
 gem 'inherited_resources'
 gem 'jquery-rails'
 gem 'mysql2'
+gem "omniauth-facebook"
 gem 'paperclip', '~> 2.7'
 gem 'rails', '3.2.1'
 gem 'rails3-jquery-autocomplete'

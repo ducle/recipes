@@ -7,7 +7,11 @@
         %li#favourites.active= link_to "<span>favourites</span>".html_safe, "#favourites"
         %li#explore= link_to "<span>explore</span>".html_safe, '#explore'
       .pull-right.auth-menu
-        = link_to "<span id='facebook-login-button' class='fb_button_text' title='Sign in using Facebook account'>Login</span>".html_safe, '', class: 'fb_button fb_button_medium displayNone'
+        - if current_user
+          = current_user.name
+          = link_to 'sign out', destroy_user_session_path, method: :delete
+        - else
+          = link_to "<span id='facebook-login-button' class='fb_button_text' title='Sign in using Facebook account'>Login</span>".html_safe, user_omniauth_authorize_path(:facebook), class: 'fb_button fb_button_medium displayNone'
       .submenu
         = link_to "<strong>1</strong> recipes in  your basket".html_safe, '#', class: 'noti'
         %p.pull-right 

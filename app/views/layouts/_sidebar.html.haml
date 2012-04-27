@@ -1,16 +1,15 @@
-.span2{style: 'min-width: 120px;'}
-  .sidebar-nav
-    %form.search
-      = text_field_tag :search,'', placeholder: 'search', class: 'span3'
-    .nav.nav-list
-      %li.nav-header Sort by
-      %li= link_to 'a-z', '#'
-      %li= link_to 'recent', '#'
-      %li= link_to 'tags', '#'
-      %li.nav-header Tags
-      %li= link_to 'Beef (12)', '#'
-      %li= link_to 'Dinner (12)', '#'
-      %li= link_to 'Deserts (12)', '#'
-      %li= link_to 'iPhone (12)', '#'
-      %li= link_to '<strong>Emailed (12)</trong>'.html_safe, '#'
-    %p.create-tag= link_to '+ create tag', '#'
+.sidebar-nav
+  %form.search
+    = text_field_tag :search,'', placeholder: 'search', class: 'span3'
+  .nav.nav-list
+    %li.nav-header Sort by
+    %li= link_to 'a-z', '#'
+    %li= link_to 'recent', '#'
+    %li= link_to 'tags', '#'
+    %li.nav-header Tags
+    %li= link_to 'Beef (12)', '#'
+    %li= link_to 'Dinner (12)', '#'
+    %li= link_to 'Deserts (12)', '#'
+    %li= link_to 'iPhone (12)', '#'
+    %li= link_to '<strong>Emailed (12)</trong>'.html_safe, '#'
+  %p.create-tag= link_to '+ create tag', '#'
